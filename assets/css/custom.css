@@ -1,0 +1,949 @@
+/* Background Merah Tua dan Teks Putih */
+body,
+.content-wrapper,
+.container,
+.container-fluid,
+.bg-white,
+.card,
+.page-content,
+.modal-content,
+.scroll-to-top,
+.dropdown-menu {
+    background-color: #E6E6E6!important;
+    color: #333 !important;
+}
+
+.sidebar {
+    background-color: #f9fcfa!important;
+    color: white !important;
+}
+
+/* footer {
+    background-color: #0fb926 !important;
+    color: white !important;
+} */
+
+.navbar {
+    background-color: #f9fcfa !important;
+    color: white !important;
+}
+
+
+/* Warna tombol & border opsional */
+.btn-primary,
+.btn-secondary,
+.btn {
+    background-color: #f9fcfa !important;
+    border-color: #f9fcfa !important;
+    color: #666262 !important;
+    transition: all 0.3s ease !important; /* Tambahkan efek transisi */
+}
+
+/* Hover effect untuk semua tombol */
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn:hover {
+    background-color: #0c8b00 !important; /* Warna hijau */
+    border-color: #0c8b00 !important; /* Warna hijau sama untuk border */
+    color: white !important; /* Teks berubah putih saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Efek bayangan tambahan */
+}
+
+.btn.btn-primary {
+    color: #666262 !important;
+}
+
+.content,
+.content-wrapper,
+.page-content,
+#content,
+#content-wrapper {
+    background-color: #E6E6E6 !important;
+    color: white !important;
+}
+
+/* Ubah background seluruh halaman dan komponen putih */
+
+.page-tittle {
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(94, 90, 90, 0.4);
+        margin-bottom: 40px;
+    }
+
+    
+/* Ubah semua teks yang biasanya gelap jadi putih */
+.text-dark,
+.card-title,
+.card-text,
+h1, h2, h3, h4, h5, h6,
+p, span, label, a, small, strong {
+    color:  #666262 !important;
+}
+
+/* Style saat hover */
+
+h1:hover {
+    color: #0c8b00 !important;
+}
+
+/* Tambahan khusus untuk elemen dengan background hijau saat hover */
+.list-group a.list-group-item:hover,
+.list-group a.list-group-item:hover * {
+    color: #ffffff !important;
+}
+
+/* Opsional: ubah link hover */
+/* a:hover {
+    color: #0c8b00 !important;
+} */
+
+/* === BUTTON STYLING === */
+.btn-secondary {
+    background-color: #858796;
+    border: none;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d;
+}
+
+/* === CARD DESIGN === */
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color:  #0c8b00;
+    color:#E6E6E6 !important;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 1rem 1.25rem;
+}
+
+.card-header.py-3 h6 {
+    color: #E6E6E6 !important;
+}
+
+
+/* ===== FIX FOR LIST GROUP ITEM HOVER ===== */
+.list-group-item {
+    border: none !important;
+    background-color: transparent !important;
+    color: #666262 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.list-group-item i {
+    margin-right: 10px !important;
+    color: #666262 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* FIX HOVER STATE - HARUS LEBIH SPESIFIK */
+.list-group .list-group-item.list-group-item-action:hover,
+.list-group .list-group-item.list-group-item-action:focus,
+.list-group .list-group-item.list-group-item-action.active {
+    background-color: #0c8b00 !important;
+    color: #ffffff !important;
+}
+
+/* FIX ICON HOVER STATE */
+.list-group .list-group-item.list-group-item-action:hover i,
+.list-group .list-group-item.list-group-item-action:focus i,
+.list-group .list-group-item.list-group-item-action.active i {
+    color: #ffffff !important;
+    transform: scale(1.1);
+}
+
+/* FIX TRANSFORM EFFECT */
+.list-group .list-group-item.list-group-item-action:hover {
+    transform: translateX(5px) !important;
+}
+
+/* FIX ACTIVE STATE */
+.list-group .list-group-item.list-group-item-action.active {
+    transform: translateX(5px) !important;
+}
+
+/* ===== OVERRIDE BOOTSTRAP DEFAULTS ===== */
+/* Ini harus ditempatkan SETELAH semua CSS Bootstrap */
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+    z-index: unset !important; /* Remove bootstrap's z-index */
+}
+
+/* ===== FIX FOR SPECIFIC SELECTORS ===== */
+/* Untuk memastikan selector kita lebih kuat dari Bootstrap */
+a.list-group-item.list-group-item-action:hover,
+a.list-group-item.list-group-item-action:focus,
+a.list-group-item.list-group-item-action.active {
+    background-color: #0c8b00 !important;
+    color: #ffffff !important;
+}
+
+a.list-group-item.list-group-item-action:hover i,
+a.list-group-item.list-group-item-action:focus i,
+a.list-group-item.list-group-item-action.active i {
+    color: #ffffff !important;
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 1rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .list-group-item {
+        font-size: 15px;
+    }
+}
+
+
+/* ===== MODAL MOBILE FIXES ===== */
+/* Modal header styling */
+.modal-header {
+    background-color: #0c8b00 !important;
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 12px 15px !important;
+}
+
+.modal-title {
+    color: white !important;
+    font-size: 1.1rem !important;
+}
+
+/* Close button styling */
+.modal-header .btn-close {
+    filter: invert(1) brightness(100%) !important;
+    opacity: 1 !important;
+    background-size: 1.2em !important;
+    padding: 0.4rem 0.4rem !important;
+    margin: -0.4rem -0.4rem -0.4rem auto !important;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 0.75 !important;
+}
+
+/* Fix untuk modal backdrop */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Fix untuk modal yang tidak mau tutup */
+body.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important;
+}
+
+/* Modal content adjustments */
+.modal-content {
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
+    margin: 10px !important;
+}
+
+/* Modal body padding */
+.modal-body {
+    padding: 15px !important;
+}
+
+/* Modal footer buttons */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 15px !important;
+    flex-wrap: wrap;
+}
+
+.modal-footer .btn {
+    min-width: 70px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Secondary button (Tutup/Batal) */
+.modal-footer .btn-secondary {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: white !important;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268 !important;
+    border-color: #545b62 !important;
+}
+
+/* Primary button (Simpan) */
+.modal-footer .btn-primary {
+    background-color: #0c8b00 !important;
+    border-color: #0c8b00 !important;
+    color: white !important;
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #0a7a00 !important;
+    border-color: #0a7a00 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modal-footer .btn-primary:active,
+.modal-footer .btn-primary:focus {
+    background-color: #096900 !important;
+    border-color: #096900 !important;
+    box-shadow: 0 0 0 0.2rem rgba(12, 139, 0, 0.5) !important;
+}
+
+/* Delete button in delete modal */
+.modal-footer .btn-danger {
+    background-color: #ffffff !important;
+    color: #545b62  !important;
+}
+
+.modal-footer .btn-danger:hover {
+    background-color: #0c8b00 !important;
+    color: #ffffff !important;
+}
+/* Responsive adjustments for tablets (768px and below) */
+@media (max-width: 767.98px) {
+    .modal-dialog {
+        margin: 15px auto !important;
+        max-width: 90% !important;
+    }
+    
+    .modal-content {
+        margin: 0 !important;
+    }
+    
+    .modal-header {
+        padding: 12px 15px !important;
+    }
+    
+    .modal-title {
+        font-size: 1.05rem !important;
+    }
+    
+    .modal-body {
+        padding: 15px !important;
+    }
+    
+    .modal-footer {
+        padding: 12px 15px !important;
+    }
+    
+    .modal-footer .btn {
+        min-width: 65px;
+        padding: 6px 10px;
+    }
+}
+
+/* Responsive adjustments for small phones (480px and below) */
+@media (max-width: 480px) {
+    .modal-dialog {
+        margin: 10px auto !important;
+        max-width: 95% !important;
+    }
+    
+    .modal-header {
+        padding: 10px 12px !important;
+    }
+    
+    .modal-title {
+        font-size: 1rem !important;
+    }
+    
+    .modal-body {
+        padding: 12px !important;
+    }
+    
+    .modal-footer {
+        padding: 10px 12px !important;
+        gap: 6px;
+    }
+    
+    .modal-footer .btn {
+        min-width: 60px;
+        padding: 5px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .modal-header .btn-close {
+        background-size: 1em !important;
+        padding: 0.3rem 0.3rem !important;
+    }
+}
+
+/* Responsive adjustments for very small phones (360px and below) */
+@media (max-width: 360px) {
+    .modal-dialog {
+        margin: 5px auto !important;
+    }
+    
+    .modal-footer {
+        justify-content: center;
+    }
+    
+    .modal-footer .btn {
+        flex: 1 1 45%;
+        min-width: auto;
+        margin: 2px;
+    }
+}
+        
+/* Form Input */
+.form-control, .form-control:focus, 
+.form-select, .form-select:focus, 
+textarea.form-control {
+  color: #666262 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #e0e0e0;
+}
+
+/* Label */
+label {
+  color: #666262 !important;
+}
+
+/* Placeholder */
+input::placeholder {
+  color: #b0b0b0 !important;
+}
+
+ /* Gaya dasar tombol */
+        .btn.btn-primary {
+            background-color: #f9fcfa !important;
+            border-color: #f9fcfa !important;
+            color: #666262 !important;
+            font-weight: bold !important;
+            transition: all 0.3s ease !important;
+        }
+
+        /* Gaya ikon dalam tombol */
+        .btn.btn-primary i.fas.fa-plus {
+            color: #666262 !important;
+            transition: all 0.3s ease !important;
+        }
+
+        /* Efek hover - hijau dengan teks/ikon putih */
+        .btn.btn-primary:hover {
+            background-color: #0c8b00 !important;
+            border-color: #0c8b00 !important;
+            color: white !important;
+        }
+
+        .btn.btn-primary:hover i.fas.fa-plus {
+            color: white !important;
+        }
+
+        /* Efek saat aktif/diklik - tetap hijau dengan putih */
+        .btn.btn-primary:active,
+        .btn.btn-primary:focus,
+        .btn.btn-primary.active {
+            background-color: #0c8b00 !important;
+            border-color: #0c8b00 !important;
+            color: white !important;
+        }
+
+        .btn.btn-primary:active i.fas.fa-plus,
+        .btn.btn-primary:focus i.fas.fa-plus,
+        .btn.btn-primary.active i.fas.fa-plus {
+            color: white !important;
+        }
+
+        /* Warna teks tab biasa */
+        .nav-tabs .nav-link {
+            color: #666262 !important;
+            font-weight: bold !important;
+        }
+
+        /* Warna teks tab aktif */
+        .nav-tabs .nav-link.active {
+            color: #0c8b00 !important;
+            font-weight: bold !important;
+            border-bottom: 2px solid #0c8b00 !important;
+            /* Garis bawah tab aktif */
+        }
+
+        /* Warna hover tab */
+        .nav-tabs .nav-link:hover {
+            color: #0c8b00 !important;
+            opacity: 0.8;
+            /* Sedikit transparan saat hover */
+        }
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  color: #666262 !important;
+  border: 1px solid #e0e0e0;
+}
+
+/* Select2 Custom */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #0c8b00 !important;
+  color: white !important;
+}
+
+/* ===== SIDEBAR ===== */
+
+/* ===== SIDEBAR ===== */
+   .sidebar {
+    width: 250px;
+   background: #f8f9fa; /* Warna background light grey */
+    transition: width 0.3s ease;
+    border-right: 1px solid #dee2e6;
+}
+    /* CUSTOM CSS UNTUK SIDEBAR TOGGLED */
+    .sidebar.toggled {
+       width: 158px !important;
+       overflow: hidden !important; /* Diubah dari hidden ke visible */
+    }
+
+    /* Teks di sidebar */
+.sidebar *:not(.sidebar-brand) {
+    color: #666262 !important; /* Warna abu-abu untuk semua teks */
+}
+/* Teks menu utama */
+.sidebar.toggled .nav-item .nav-link span {
+    display: inline-block;
+    position: absolute;
+    left: 120px; /* Sesuai lebar sidebar toggled */
+    width: max-content;
+    background: #343a40; /* Warna sama dengan sidebar */
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* Teks submenu dalam collapse */
+.sidebar.toggled .collapse-inner .collapse-item {
+    white-space: nowrap;
+}
+
+/* Logo dan brand text */
+.sidebar.toggled .sidebar-brand .sidebar-brand-text {
+    display: none;
+}
+
+/* Efek hover untuk menampilkan teks */
+.sidebar.toggled .nav-item:hover .nav-link span {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Icon chevron untuk menu dropdown */
+.sidebar.toggled .chevron-icon {
+    display: none;
+}
+
+/* Penyesuaian untuk menu aktif */
+.sidebar.toggled .nav-item.active .nav-link {
+    position: relative;
+}
+
+/* Divider */
+.sidebar.toggled .sidebar-divider {
+    margin: 0.5rem auto;
+    width: 80%;
+}
+    
+    .sidebar .sidebar-heading {
+        padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+    }
+
+   /* Sidebar Items */
+.sidebar .nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    color: #666262 !important; /* Text color grey */
+    white-space: nowrap;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+}
+
+
+
+.sidebar .nav-item .nav-link i {
+    color: #666262 !important;
+    min-width: 24px;
+    text-align: center;
+    font-size: 0.9rem; /* Ukuran normal */
+    transition: all 0.3s ease;
+}
+
+/* Ukuran saat sidebar collapsed */
+.sidebar.toggled .nav-item .nav-link i {
+    font-size: 1rem !important; /* Sedikit lebih besar tapi tidak terlalu besar */
+    margin: 0 auto; /* Pusatkan ikon */
+}
+
+/* Perbaikan khusus untuk brand icon */
+.sidebar.toggled .sidebar-brand-icon i {
+    font-size: 1.2rem !important; /* Ukuran brand icon */
+}
+
+/* Pastikan padding konsisten */
+.sidebar.toggled .nav-link {
+    padding: 0.75rem 0 !important; /* Padding vertikal saja */
+    justify-content: center;
+}
+
+
+/* Hover Effect */
+.sidebar .nav-link:hover {
+    background-color: transparent !important;
+    color: #0c8b00 !important; /* Green text on hover */
+    border-left-color: #0c8b00;
+}
+
+.sidebar .nav-link:hover i {
+    color: #0c8b00 !important; /* Green icon on hover */
+}
+
+/* Active Item */
+.sidebar .nav-item.active > .nav-link {
+    background-color: transparent !important;
+    color: #0c8b00 !important;
+    font-weight: 600;
+    border-left-color: #0c8b00;
+}
+
+.sidebar .nav-item.active > .nav-link i {
+    color: #0c8b00 !important;
+}
+
+/* Sidebar Heading */
+.sidebar .sidebar-heading {
+    padding: 1rem 1.5rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #adb5bd;
+    letter-spacing: 1px;
+}
+
+/* Collapse Menu */
+.sidebar .collapse-inner {
+    padding-left: 0;
+}
+
+.collapse-inner .collapse-item {
+    padding: 0.6rem 1rem 0.6rem 3rem;
+    color: #666262;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.collapse-inner .collapse-item:hover {
+    color: #0c8b00 !important;
+    background-color: transparent !important;
+}
+
+    .collapse-inner .collapse-item.active {
+        background-color: #0c8b00 !important;
+        font-weight:  500;
+        color: black !important;
+    }
+
+    .sidebar-brand-icon {
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+    }
+
+    .sidebar-brand-icon img {
+        width: 25px;
+    }
+
+    /* Toggled behavior */
+    .sidebar.toggled .nav-link span,
+    .sidebar.toggled .sidebar-brand-text,
+    .sidebar.toggled .collapse-inner .collapse-item span {
+        display: none !important;
+    }
+
+    .sidebar.toggled .nav-item .nav-link {
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.sidebar.toggled .nav-item .nav-link i {
+    font-size: 1.3rem;
+}
+
+/* Tooltip for Toggled State */
+.sidebar.toggled .nav-item .nav-link::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #ffffff;
+    color: #666262;
+    padding: 12px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+.sidebar.toggled .nav-item:hover .nav-link::after {
+    opacity: 1;
+}
+
+/* ===== SCROLL SYSTEM ===== */
+.app-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-container {
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar-scroll {
+  height: 100%;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-bottom: 60px; /* Sesuaikan dengan footer */
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.main-content-scroll {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main-content-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Untuk tombol toggle mobile */
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}
+
+/* Overlay untuk sidebar mobile */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+}
+
+.sidebar-overlay.show {
+    display: block;
+}
+
+#mobileSidebarToggle {
+    display: none !important;
+    position: fixed;
+    z-index: 9999;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c8b00 !important;
+    border: 2px solid white !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#mobileSidebarToggle i {
+    color: white !important;
+    font-size: 1.2rem;
+}
+
+
+/* Sidebar mobile */
+.sidebar.mobile-show {
+    transform: translateX(0);
+}
+
+ #sidebarToggle:hover {
+        background-color: #28a745 !important; /* Hijau saat hover */
+        border-color: white !important; /* Border putih saat hover */
+    }
+    
+    #sidebarToggle:hover i {
+        color: white !important; /* Warna icon putih saat hover */
+    }
+    
+    /* Animasi icon ketika sidebar collapsed */
+    .sidebar-toggled #sidebarToggle i {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+/* Mobile Responsiveness */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: fixed;
+        z-index: 9998;
+        left: -250px;
+        transition: all 0.3s ease;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .sidebar:not(.mobile-show) {
+        transform: translateX(-100%);
+    }
+    .sidebar {
+        position: fixed;
+        z-index: 9999;
+        height: 100vh;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .sidebar.mobile-show {
+        left: 0;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+    }
+    
+    .sidebar.toggled.mobile-show {
+        width: 80px !important;
+    }
+    
+    .main-content {
+        margin-left: 0 !important;
+    }
+    
+    #mobileSidebarToggle {
+        display: flex !important;
+    }
+
+    .topbar ~ #mobileSidebarToggle {
+        top: 70px; /* Sesuaikan dengan tinggi topbar */
+    }
+    
+    /* Overlay when sidebar is open */
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 9997;
+        display: none;
+    }
+    
+    .sidebar-overlay.show {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    #mobileSidebarToggle {
+        display: none !important;
+    }
+    
+    .sidebar-overlay {
+        display: none !important;
+    }
+}
+
+
+.custom-topbar {
+  background-color: linear-gradient(135deg, #801e1e 0%, #a12e2e 50%, #c13a3a 100%);
+}
+
+.custom-topbar .nav-link,
+.custom-topbar .navbar-brand,
+.custom-topbar .dropdown-item,
+.custom-topbar .topbar-divider {
+  color: #131212 !important;
+}
+
+.custom-topbar .nav-link:hover,
+.custom-topbar .dropdown-item:hover {
+  background-color: linear-gradient(135deg, #801e1e 0%, #a12e2e 50%, #c13a3a 100%);
+  color: #ffffff !important;
+}
+
+.custom-topbar .dropdown-menu {
+  background-color: linear-gradient(135deg, #801e1e 0%, #a12e2e 50%, #c13a3a 100%);
+  border: none;
+}
+
+.custom-topbar .dropdown-menu .dropdown-item {
+  color: #0c0c0c !important;
+}
+
+.custom-topbar .dropdown-menu .dropdown-item:hover {
+  background-color: #0c8b00 !important;
+  color: #fff !important;
+}
+
+.navbar .nav-link span.username-text {
+  font-size: 1rem !important;
+  font-weight: 500;
+  color: #ffffff;
+}
